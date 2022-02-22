@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220222 13:21:01.054" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220222 13:23:05.730" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="C:\Users\Jakob Nilsson\PycharmProjects\robot\Tests">
 <suite id="s1-s1" name="Webtest" source="C:\Users\Jakob Nilsson\PycharmProjects\robot\Tests\webtest.robot">
 <test id="s1-s1-t1" name="User Can Access Website">
@@ -7,34 +7,34 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220222 13:21:01.366" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220222 13:21:01.366" endtime="20220222 13:21:02.968"/>
+<msg timestamp="20220222 13:23:06.048" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220222 13:23:06.048" endtime="20220222 13:23:07.618"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://www.mediamarkt.se</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220222 13:21:02.977" level="INFO">Opening url 'https://www.mediamarkt.se'</msg>
-<status status="PASS" starttime="20220222 13:21:02.976" endtime="20220222 13:21:05.361"/>
+<msg timestamp="20220222 13:23:07.623" level="INFO">Opening url 'https://www.mediamarkt.se'</msg>
+<status status="PASS" starttime="20220222 13:23:07.623" endtime="20220222 13:23:10.478"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Om Mediamarkt</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<msg timestamp="20220222 13:21:11.135" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220222 13:21:11.138" level="FAIL">Text 'Om Mediamarkt' did not appear in 5 seconds.</msg>
-<status status="FAIL" starttime="20220222 13:21:05.362" endtime="20220222 13:21:11.138"/>
+<msg timestamp="20220222 13:23:16.119" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220222 13:23:16.123" level="FAIL">Text 'Om Mediamarkt' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20220222 13:23:10.479" endtime="20220222 13:23:16.124"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20220222 13:21:11.139" endtime="20220222 13:21:11.139"/>
+<status status="NOT RUN" starttime="20220222 13:23:16.127" endtime="20220222 13:23:16.127"/>
 </kw>
 <doc>This is some basic infomation</doc>
 <tag>Test 1</tag>
-<status status="FAIL" starttime="20220222 13:21:01.365" endtime="20220222 13:21:11.140">Text 'Om Mediamarkt' did not appear in 5 seconds.</status>
+<status status="FAIL" starttime="20220222 13:23:06.047" endtime="20220222 13:23:16.128">Text 'Om Mediamarkt' did not appear in 5 seconds.</status>
 </test>
 <doc>some basic infomation</doc>
-<status status="FAIL" starttime="20220222 13:21:01.088" endtime="20220222 13:21:11.142"/>
+<status status="FAIL" starttime="20220222 13:23:05.762" endtime="20220222 13:23:16.131"/>
 </suite>
-<status status="FAIL" starttime="20220222 13:21:01.057" endtime="20220222 13:21:11.146"/>
+<status status="FAIL" starttime="20220222 13:23:05.732" endtime="20220222 13:23:16.134"/>
 </suite>
 <statistics>
 <total>
