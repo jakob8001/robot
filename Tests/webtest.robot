@@ -12,3 +12,4 @@ User Can Access Website
     Go To   https://www.mediamarkt.se
     Wait Until Page Contains    Om Mediamarkt
     Close Browser
+
