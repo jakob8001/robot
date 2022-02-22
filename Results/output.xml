@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220222 13:13:46.575" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\Jakob Nilsson\PycharmProjects\robot\Tests">
+<suite id="s1-s1" name="Webtest" source="C:\Users\Jakob Nilsson\PycharmProjects\robot\Tests\webtest.robot">
+<test id="s1-s1-t1" name="User Can Access Website">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220222 13:13:47.027" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220222 13:13:47.027" endtime="20220222 13:13:49.426"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mediamarkt.se</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220222 13:13:49.431" level="INFO">Opening url 'https://www.mediamarkt.se'</msg>
+<status status="PASS" starttime="20220222 13:13:49.430" endtime="20220222 13:13:51.848"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Om Mediamarkt</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<msg timestamp="20220222 13:13:57.432" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220222 13:13:57.436" level="FAIL">Text 'Om Mediamarkt' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20220222 13:13:51.850" endtime="20220222 13:13:57.436"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220222 13:13:57.437" endtime="20220222 13:13:57.437"/>
+</kw>
+<doc>This is some basic infomation</doc>
+<tag>Test 1</tag>
+<status status="FAIL" starttime="20220222 13:13:47.025" endtime="20220222 13:13:57.437">Text 'Om Mediamarkt' did not appear in 5 seconds.</status>
+</test>
+<doc>some basic infomation</doc>
+<status status="FAIL" starttime="20220222 13:13:46.616" endtime="20220222 13:13:57.439"/>
+</suite>
+<status status="FAIL" starttime="20220222 13:13:46.579" endtime="20220222 13:13:57.445"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Test 1</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Webtest">Tests.Webtest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
